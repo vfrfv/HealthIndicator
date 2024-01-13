@@ -5,6 +5,6 @@ public class SliderHealthBar : HealthBar
 {
     protected override void Fill(float currentValue)
     {
-        //_slider.value = currentValue;
+        _slider.value = currentValue;
     }
 }
