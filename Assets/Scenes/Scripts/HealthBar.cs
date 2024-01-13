@@ -1,9 +1,10 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(Slider))]
 public abstract class HealthBar : MonoBehaviour
 {
-    [SerializeField] protected Health _health;
+    [SerializeField] protected Player _health;
 
     protected Slider _slider;
 
@@ -23,5 +24,4 @@ public abstract class HealthBar : MonoBehaviour
     }
 
     protected abstract void Fill(float currentValue);
-
 }
